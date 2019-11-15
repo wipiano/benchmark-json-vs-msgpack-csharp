@@ -1,0 +1,476 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 8 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet restore  /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 in /home/hakoishi/MessagePackVsJson/bin/Release/netcoreapp3.0/aa818c1b-7f76-4680-b258-9b614d54c44d
+// command took 0.93s and exited with 0
+// start dotnet build -c Release  --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 in /home/hakoishi/MessagePackVsJson/bin/Release/netcoreapp3.0/aa818c1b-7f76-4680-b258-9b614d54c44d
+// command took 1.6s and exited with 0
+// ***** Done, took 00:00:02 (2.6 sec)   *****
+// Found 8 benchmarks:
+//   SampleBenchmark.Utf8JsonWithType: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+//   SampleBenchmark.Utf8JsonWithTypeGz: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+//   SampleBenchmark.Utf8JsonTypeless: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+//   SampleBenchmark.Utf8JsonTypelessGz: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+//   SampleBenchmark.MessagePackWithType: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+//   SampleBenchmark.MessagePackWithTypeLz4: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+//   SampleBenchmark.MessagePackTypeless: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+//   SampleBenchmark.MessagePackTypelessLz4: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+
+// **************************
+// Benchmark: SampleBenchmark.Utf8JsonWithType: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "aa818c1b-7f76-4680-b258-9b614d54c44d.dll" --benchmarkName "MessagePackVsJson.SampleBenchmark.Utf8JsonWithType" --job "ShortRun" --benchmarkId 0 in /home/hakoishi/MessagePackVsJson/bin/Release/netcoreapp3.0/aa818c1b-7f76-4680-b258-9b614d54c44d/bin/Release/netcoreapp3.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 3.0.0 (CoreCLR 4.700.19.46205, CoreFX 4.700.19.46214), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+
+OverheadJitting  1: 1 op, 258578.00 ns, 258.5780 us/op
+WorkloadJitting  1: 1 op, 1176284161.00 ns, 1.1763 s/op
+
+WorkloadWarmup   1: 1 op, 1003322954.00 ns, 1.0033 s/op
+WorkloadWarmup   2: 1 op, 1000831512.00 ns, 1.0008 s/op
+WorkloadWarmup   3: 1 op, 1019793256.00 ns, 1.0198 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 1009597633.00 ns, 1.0096 s/op
+WorkloadActual   2: 1 op, 1016114682.00 ns, 1.0161 s/op
+WorkloadActual   3: 1 op, 1016514757.00 ns, 1.0165 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 1009597633.00 ns, 1.0096 s/op
+WorkloadResult   2: 1 op, 1016114682.00 ns, 1.0161 s/op
+WorkloadResult   3: 1 op, 1016514757.00 ns, 1.0165 s/op
+GC:  1 1 0 674228032 1
+Threading:  2 0 1
+
+// AfterAll
+// Benchmark Process 23138 has exited with code 0
+
+Mean = 1.0141 s, StdErr = 0.0022 s (0.22%); N = 3, StdDev = 0.0039 s
+Min = 1.0096 s, Q1 = 1.0096 s, Median = 1.0161 s, Q3 = 1.0165 s, Max = 1.0165 s
+IQR = 0.0069 s, LowerFence = 0.9992 s, UpperFence = 1.0269 s
+ConfidenceInterval = [0.9432 s; 1.0849 s] (CI 99.9%), Margin = 0.0708 s (6.99% of Mean)
+Skewness = -0.38, Kurtosis = 0.67, MValue = 2
+
+// **************************
+// Benchmark: SampleBenchmark.Utf8JsonWithTypeGz: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "aa818c1b-7f76-4680-b258-9b614d54c44d.dll" --benchmarkName "MessagePackVsJson.SampleBenchmark.Utf8JsonWithTypeGz" --job "ShortRun" --benchmarkId 1 in /home/hakoishi/MessagePackVsJson/bin/Release/netcoreapp3.0/aa818c1b-7f76-4680-b258-9b614d54c44d/bin/Release/netcoreapp3.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 3.0.0 (CoreCLR 4.700.19.46205, CoreFX 4.700.19.46214), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+
+OverheadJitting  1: 1 op, 261480.00 ns, 261.4800 us/op
+WorkloadJitting  1: 1 op, 4506941334.00 ns, 4.5069 s/op
+
+WorkloadWarmup   1: 1 op, 4267776592.00 ns, 4.2678 s/op
+WorkloadWarmup   2: 1 op, 4133040804.00 ns, 4.1330 s/op
+WorkloadWarmup   3: 1 op, 4201448289.00 ns, 4.2014 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 4160117256.00 ns, 4.1601 s/op
+WorkloadActual   2: 1 op, 4148837742.00 ns, 4.1488 s/op
+WorkloadActual   3: 1 op, 4214354862.00 ns, 4.2144 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 4160117256.00 ns, 4.1601 s/op
+WorkloadResult   2: 1 op, 4148837742.00 ns, 4.1488 s/op
+WorkloadResult   3: 1 op, 4214354862.00 ns, 4.2144 s/op
+GC:  7 7 2 853635264 1
+Threading:  3 0 1
+
+// AfterAll
+// Benchmark Process 23179 has exited with code 0
+
+Mean = 4.1744 s, StdErr = 0.0202 s (0.48%); N = 3, StdDev = 0.0350 s
+Min = 4.1488 s, Q1 = 4.1488 s, Median = 4.1601 s, Q3 = 4.2144 s, Max = 4.2144 s
+IQR = 0.0655 s, LowerFence = 4.0506 s, UpperFence = 4.3126 s
+ConfidenceInterval = [3.5354 s; 4.8135 s] (CI 99.9%), Margin = 0.6390 s (15.31% of Mean)
+Skewness = 0.34, Kurtosis = 0.67, MValue = 2
+
+// **************************
+// Benchmark: SampleBenchmark.Utf8JsonTypeless: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "aa818c1b-7f76-4680-b258-9b614d54c44d.dll" --benchmarkName "MessagePackVsJson.SampleBenchmark.Utf8JsonTypeless" --job "ShortRun" --benchmarkId 2 in /home/hakoishi/MessagePackVsJson/bin/Release/netcoreapp3.0/aa818c1b-7f76-4680-b258-9b614d54c44d/bin/Release/netcoreapp3.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 3.0.0 (CoreCLR 4.700.19.46205, CoreFX 4.700.19.46214), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+
+OverheadJitting  1: 1 op, 259516.00 ns, 259.5160 us/op
+WorkloadJitting  1: 1 op, 1171789099.00 ns, 1.1718 s/op
+
+WorkloadWarmup   1: 1 op, 990752025.00 ns, 990.7520 ms/op
+WorkloadWarmup   2: 1 op, 988470860.00 ns, 988.4709 ms/op
+WorkloadWarmup   3: 1 op, 991012970.00 ns, 991.0130 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 987322885.00 ns, 987.3229 ms/op
+WorkloadActual   2: 1 op, 987898488.00 ns, 987.8985 ms/op
+WorkloadActual   3: 1 op, 986632165.00 ns, 986.6322 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 987322885.00 ns, 987.3229 ms/op
+WorkloadResult   2: 1 op, 987898488.00 ns, 987.8985 ms/op
+WorkloadResult   3: 1 op, 986632165.00 ns, 986.6322 ms/op
+GC:  1 1 0 674230096 1
+Threading:  2 0 1
+
+// AfterAll
+// Benchmark Process 23240 has exited with code 0
+
+Mean = 987.2845 ms, StdErr = 0.3661 ms (0.04%); N = 3, StdDev = 0.6340 ms
+Min = 986.6322 ms, Q1 = 986.6322 ms, Median = 987.3229 ms, Q3 = 987.8985 ms, Max = 987.8985 ms
+IQR = 1.2663 ms, LowerFence = 984.7327 ms, UpperFence = 989.7980 ms
+ConfidenceInterval = [975.7174 ms; 998.8516 ms] (CI 99.9%), Margin = 11.5671 ms (1.17% of Mean)
+Skewness = -0.06, Kurtosis = 0.67, MValue = 2
+
+// **************************
+// Benchmark: SampleBenchmark.Utf8JsonTypelessGz: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "aa818c1b-7f76-4680-b258-9b614d54c44d.dll" --benchmarkName "MessagePackVsJson.SampleBenchmark.Utf8JsonTypelessGz" --job "ShortRun" --benchmarkId 3 in /home/hakoishi/MessagePackVsJson/bin/Release/netcoreapp3.0/aa818c1b-7f76-4680-b258-9b614d54c44d/bin/Release/netcoreapp3.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 3.0.0 (CoreCLR 4.700.19.46205, CoreFX 4.700.19.46214), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+
+OverheadJitting  1: 1 op, 262332.00 ns, 262.3320 us/op
+WorkloadJitting  1: 1 op, 4357817561.00 ns, 4.3578 s/op
+
+WorkloadWarmup   1: 1 op, 4202254646.00 ns, 4.2023 s/op
+WorkloadWarmup   2: 1 op, 4206289003.00 ns, 4.2063 s/op
+WorkloadWarmup   3: 1 op, 4201778355.00 ns, 4.2018 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 4250163297.00 ns, 4.2502 s/op
+WorkloadActual   2: 1 op, 4226988701.00 ns, 4.2270 s/op
+WorkloadActual   3: 1 op, 4291780765.00 ns, 4.2918 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 4250163297.00 ns, 4.2502 s/op
+WorkloadResult   2: 1 op, 4226988701.00 ns, 4.2270 s/op
+WorkloadResult   3: 1 op, 4291780765.00 ns, 4.2918 s/op
+GC:  7 7 2 853627608 1
+Threading:  3 0 1
+
+// AfterAll
+// Benchmark Process 23264 has exited with code 0
+
+Mean = 4.2563 s, StdErr = 0.0190 s (0.45%); N = 3, StdDev = 0.0328 s
+Min = 4.2270 s, Q1 = 4.2270 s, Median = 4.2502 s, Q3 = 4.2918 s, Max = 4.2918 s
+IQR = 0.0648 s, LowerFence = 4.1298 s, UpperFence = 4.3890 s
+ConfidenceInterval = [3.6574 s; 4.8553 s] (CI 99.9%), Margin = 0.5990 s (14.07% of Mean)
+Skewness = 0.18, Kurtosis = 0.67, MValue = 2
+
+// **************************
+// Benchmark: SampleBenchmark.MessagePackWithType: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "aa818c1b-7f76-4680-b258-9b614d54c44d.dll" --benchmarkName "MessagePackVsJson.SampleBenchmark.MessagePackWithType" --job "ShortRun" --benchmarkId 4 in /home/hakoishi/MessagePackVsJson/bin/Release/netcoreapp3.0/aa818c1b-7f76-4680-b258-9b614d54c44d/bin/Release/netcoreapp3.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 3.0.0 (CoreCLR 4.700.19.46205, CoreFX 4.700.19.46214), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+
+OverheadJitting  1: 1 op, 267969.00 ns, 267.9690 us/op
+WorkloadJitting  1: 1 op, 520251446.00 ns, 520.2514 ms/op
+
+WorkloadWarmup   1: 1 op, 381537855.00 ns, 381.5379 ms/op
+WorkloadWarmup   2: 1 op, 401743536.00 ns, 401.7435 ms/op
+WorkloadWarmup   3: 1 op, 380518800.00 ns, 380.5188 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 403340526.00 ns, 403.3405 ms/op
+WorkloadActual   2: 1 op, 384172097.00 ns, 384.1721 ms/op
+WorkloadActual   3: 1 op, 416444546.00 ns, 416.4445 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 403340526.00 ns, 403.3405 ms/op
+WorkloadResult   2: 1 op, 384172097.00 ns, 384.1721 ms/op
+WorkloadResult   3: 1 op, 416444546.00 ns, 416.4445 ms/op
+GC:  0 0 0 353264168 1
+Threading:  2 0 1
+
+// AfterAll
+// Benchmark Process 23344 has exited with code 0
+
+Mean = 401.3191 ms, StdErr = 9.3709 ms (2.34%); N = 3, StdDev = 16.2309 ms
+Min = 384.1721 ms, Q1 = 384.1721 ms, Median = 403.3405 ms, Q3 = 416.4445 ms, Max = 416.4445 ms
+IQR = 32.2724 ms, LowerFence = 335.7634 ms, UpperFence = 464.8532 ms
+ConfidenceInterval = [105.2068 ms; 697.4313 ms] (CI 99.9%), Margin = 296.1123 ms (73.78% of Mean)
+Skewness = -0.12, Kurtosis = 0.67, MValue = 2
+
+// **************************
+// Benchmark: SampleBenchmark.MessagePackWithTypeLz4: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "aa818c1b-7f76-4680-b258-9b614d54c44d.dll" --benchmarkName "MessagePackVsJson.SampleBenchmark.MessagePackWithTypeLz4" --job "ShortRun" --benchmarkId 5 in /home/hakoishi/MessagePackVsJson/bin/Release/netcoreapp3.0/aa818c1b-7f76-4680-b258-9b614d54c44d/bin/Release/netcoreapp3.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 3.0.0 (CoreCLR 4.700.19.46205, CoreFX 4.700.19.46214), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+
+OverheadJitting  1: 1 op, 263548.00 ns, 263.5480 us/op
+WorkloadJitting  1: 1 op, 683935935.00 ns, 683.9359 ms/op
+
+WorkloadWarmup   1: 1 op, 545592063.00 ns, 545.5921 ms/op
+WorkloadWarmup   2: 1 op, 541358921.00 ns, 541.3589 ms/op
+WorkloadWarmup   3: 1 op, 546975971.00 ns, 546.9760 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 537990960.00 ns, 537.9910 ms/op
+WorkloadActual   2: 1 op, 544866862.00 ns, 544.8669 ms/op
+WorkloadActual   3: 1 op, 542085964.00 ns, 542.0860 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 537990960.00 ns, 537.9910 ms/op
+WorkloadResult   2: 1 op, 544866862.00 ns, 544.8669 ms/op
+WorkloadResult   3: 1 op, 542085964.00 ns, 542.0860 ms/op
+GC:  2 2 0 414996864 1
+Threading:  2 0 1
+
+// AfterAll
+// Benchmark Process 23376 has exited with code 0
+
+Mean = 541.6479 ms, StdErr = 1.9969 ms (0.37%); N = 3, StdDev = 3.4588 ms
+Min = 537.9910 ms, Q1 = 537.9910 ms, Median = 542.0860 ms, Q3 = 544.8669 ms, Max = 544.8669 ms
+IQR = 6.8759 ms, LowerFence = 527.6771 ms, UpperFence = 555.1807 ms
+ConfidenceInterval = [478.5462 ms; 604.7496 ms] (CI 99.9%), Margin = 63.1017 ms (11.65% of Mean)
+Skewness = -0.12, Kurtosis = 0.67, MValue = 2
+
+// **************************
+// Benchmark: SampleBenchmark.MessagePackTypeless: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "aa818c1b-7f76-4680-b258-9b614d54c44d.dll" --benchmarkName "MessagePackVsJson.SampleBenchmark.MessagePackTypeless" --job "ShortRun" --benchmarkId 6 in /home/hakoishi/MessagePackVsJson/bin/Release/netcoreapp3.0/aa818c1b-7f76-4680-b258-9b614d54c44d/bin/Release/netcoreapp3.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 3.0.0 (CoreCLR 4.700.19.46205, CoreFX 4.700.19.46214), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+
+OverheadJitting  1: 1 op, 262661.00 ns, 262.6610 us/op
+WorkloadJitting  1: 1 op, 509513403.00 ns, 509.5134 ms/op
+
+WorkloadWarmup   1: 1 op, 345669267.00 ns, 345.6693 ms/op
+WorkloadWarmup   2: 1 op, 368994175.00 ns, 368.9942 ms/op
+WorkloadWarmup   3: 1 op, 346000627.00 ns, 346.0006 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 364880424.00 ns, 364.8804 ms/op
+WorkloadActual   2: 1 op, 345189775.00 ns, 345.1898 ms/op
+WorkloadActual   3: 1 op, 364052755.00 ns, 364.0528 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 364880424.00 ns, 364.8804 ms/op
+WorkloadResult   2: 1 op, 345189775.00 ns, 345.1898 ms/op
+WorkloadResult   3: 1 op, 364052755.00 ns, 364.0528 ms/op
+GC:  0 0 0 352254120 1
+Threading:  2 0 1
+
+// AfterAll
+// Benchmark Process 23399 has exited with code 0
+
+Mean = 358.0410 ms, StdErr = 6.4300 ms (1.80%); N = 3, StdDev = 11.1372 ms
+Min = 345.1898 ms, Q1 = 345.1898 ms, Median = 364.0528 ms, Q3 = 364.8804 ms, Max = 364.8804 ms
+IQR = 19.6906 ms, LowerFence = 315.6538 ms, UpperFence = 394.4164 ms
+ConfidenceInterval = [154.8576 ms; 561.2243 ms] (CI 99.9%), Margin = 203.1834 ms (56.75% of Mean)
+Skewness = -0.38, Kurtosis = 0.67, MValue = 2
+
+// **************************
+// Benchmark: SampleBenchmark.MessagePackTypelessLz4: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "aa818c1b-7f76-4680-b258-9b614d54c44d.dll" --benchmarkName "MessagePackVsJson.SampleBenchmark.MessagePackTypelessLz4" --job "ShortRun" --benchmarkId 7 in /home/hakoishi/MessagePackVsJson/bin/Release/netcoreapp3.0/aa818c1b-7f76-4680-b258-9b614d54c44d/bin/Release/netcoreapp3.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 3.0.0 (CoreCLR 4.700.19.46205, CoreFX 4.700.19.46214), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+
+OverheadJitting  1: 1 op, 263163.00 ns, 263.1630 us/op
+WorkloadJitting  1: 1 op, 667972929.00 ns, 667.9729 ms/op
+
+WorkloadWarmup   1: 1 op, 532431920.00 ns, 532.4319 ms/op
+WorkloadWarmup   2: 1 op, 511237722.00 ns, 511.2377 ms/op
+WorkloadWarmup   3: 1 op, 517795159.00 ns, 517.7952 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 509910540.00 ns, 509.9105 ms/op
+WorkloadActual   2: 1 op, 517151809.00 ns, 517.1518 ms/op
+WorkloadActual   3: 1 op, 511823181.00 ns, 511.8232 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 509910540.00 ns, 509.9105 ms/op
+WorkloadResult   2: 1 op, 517151809.00 ns, 517.1518 ms/op
+WorkloadResult   3: 1 op, 511823181.00 ns, 511.8232 ms/op
+GC:  2 2 0 413367120 1
+Threading:  2 0 1
+
+// AfterAll
+// Benchmark Process 23421 has exited with code 0
+
+Mean = 512.9618 ms, StdErr = 2.1665 ms (0.42%); N = 3, StdDev = 3.7525 ms
+Min = 509.9105 ms, Q1 = 509.9105 ms, Median = 511.8232 ms, Q3 = 517.1518 ms, Max = 517.1518 ms
+IQR = 7.2413 ms, LowerFence = 499.0486 ms, UpperFence = 528.0137 ms
+ConfidenceInterval = [444.5019 ms; 581.4218 ms] (CI 99.9%), Margin = 68.4599 ms (13.35% of Mean)
+Skewness = 0.28, Kurtosis = 0.67, MValue = 2
+
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts/results/MessagePackVsJson.SampleBenchmark-report-github.md
+
+// * Detailed results *
+SampleBenchmark.Utf8JsonWithType: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+Runtime = .NET Core 3.0.0 (CoreCLR 4.700.19.46205, CoreFX 4.700.19.46214), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 1.0141 s, StdErr = 0.0022 s (0.22%); N = 3, StdDev = 0.0039 s
+Min = 1.0096 s, Q1 = 1.0096 s, Median = 1.0161 s, Q3 = 1.0165 s, Max = 1.0165 s
+IQR = 0.0069 s, LowerFence = 0.9992 s, UpperFence = 1.0269 s
+ConfidenceInterval = [0.9432 s; 1.0849 s] (CI 99.9%), Margin = 0.0708 s (6.99% of Mean)
+Skewness = -0.38, Kurtosis = 0.67, MValue = 2
+-------------------- Histogram --------------------
+[1.007 s ; 1.019 s) | @@@
+---------------------------------------------------
+
+SampleBenchmark.Utf8JsonWithTypeGz: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+Runtime = .NET Core 3.0.0 (CoreCLR 4.700.19.46205, CoreFX 4.700.19.46214), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 4.1744 s, StdErr = 0.0202 s (0.48%); N = 3, StdDev = 0.0350 s
+Min = 4.1488 s, Q1 = 4.1488 s, Median = 4.1601 s, Q3 = 4.2144 s, Max = 4.2144 s
+IQR = 0.0655 s, LowerFence = 4.0506 s, UpperFence = 4.3126 s
+ConfidenceInterval = [3.5354 s; 4.8135 s] (CI 99.9%), Margin = 0.6390 s (15.31% of Mean)
+Skewness = 0.34, Kurtosis = 0.67, MValue = 2
+-------------------- Histogram --------------------
+[4.128 s ; 4.236 s) | @@@
+---------------------------------------------------
+
+SampleBenchmark.Utf8JsonTypeless: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+Runtime = .NET Core 3.0.0 (CoreCLR 4.700.19.46205, CoreFX 4.700.19.46214), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 987.2845 ms, StdErr = 0.3661 ms (0.04%); N = 3, StdDev = 0.6340 ms
+Min = 986.6322 ms, Q1 = 986.6322 ms, Median = 987.3229 ms, Q3 = 987.8985 ms, Max = 987.8985 ms
+IQR = 1.2663 ms, LowerFence = 984.7327 ms, UpperFence = 989.7980 ms
+ConfidenceInterval = [975.7174 ms; 998.8516 ms] (CI 99.9%), Margin = 11.5671 ms (1.17% of Mean)
+Skewness = -0.06, Kurtosis = 0.67, MValue = 2
+-------------------- Histogram --------------------
+[986.248 ms ; 988.283 ms) | @@@
+---------------------------------------------------
+
+SampleBenchmark.Utf8JsonTypelessGz: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+Runtime = .NET Core 3.0.0 (CoreCLR 4.700.19.46205, CoreFX 4.700.19.46214), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 4.2563 s, StdErr = 0.0190 s (0.45%); N = 3, StdDev = 0.0328 s
+Min = 4.2270 s, Q1 = 4.2270 s, Median = 4.2502 s, Q3 = 4.2918 s, Max = 4.2918 s
+IQR = 0.0648 s, LowerFence = 4.1298 s, UpperFence = 4.3890 s
+ConfidenceInterval = [3.6574 s; 4.8553 s] (CI 99.9%), Margin = 0.5990 s (14.07% of Mean)
+Skewness = 0.18, Kurtosis = 0.67, MValue = 2
+-------------------- Histogram --------------------
+[4.207 s ; 4.312 s) | @@@
+---------------------------------------------------
+
+SampleBenchmark.MessagePackWithType: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+Runtime = .NET Core 3.0.0 (CoreCLR 4.700.19.46205, CoreFX 4.700.19.46214), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 401.3191 ms, StdErr = 9.3709 ms (2.34%); N = 3, StdDev = 16.2309 ms
+Min = 384.1721 ms, Q1 = 384.1721 ms, Median = 403.3405 ms, Q3 = 416.4445 ms, Max = 416.4445 ms
+IQR = 32.2724 ms, LowerFence = 335.7634 ms, UpperFence = 464.8532 ms
+ConfidenceInterval = [105.2068 ms; 697.4313 ms] (CI 99.9%), Margin = 296.1123 ms (73.78% of Mean)
+Skewness = -0.12, Kurtosis = 0.67, MValue = 2
+-------------------- Histogram --------------------
+[374.325 ms ; 394.019 ms) | @
+[394.019 ms ; 419.740 ms) | @@
+---------------------------------------------------
+
+SampleBenchmark.MessagePackWithTypeLz4: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+Runtime = .NET Core 3.0.0 (CoreCLR 4.700.19.46205, CoreFX 4.700.19.46214), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 541.6479 ms, StdErr = 1.9969 ms (0.37%); N = 3, StdDev = 3.4588 ms
+Min = 537.9910 ms, Q1 = 537.9910 ms, Median = 542.0860 ms, Q3 = 544.8669 ms, Max = 544.8669 ms
+IQR = 6.8759 ms, LowerFence = 527.6771 ms, UpperFence = 555.1807 ms
+ConfidenceInterval = [478.5462 ms; 604.7496 ms] (CI 99.9%), Margin = 63.1017 ms (11.65% of Mean)
+Skewness = -0.12, Kurtosis = 0.67, MValue = 2
+-------------------- Histogram --------------------
+[535.893 ms ; 546.965 ms) | @@@
+---------------------------------------------------
+
+SampleBenchmark.MessagePackTypeless: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+Runtime = .NET Core 3.0.0 (CoreCLR 4.700.19.46205, CoreFX 4.700.19.46214), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 358.0410 ms, StdErr = 6.4300 ms (1.80%); N = 3, StdDev = 11.1372 ms
+Min = 345.1898 ms, Q1 = 345.1898 ms, Median = 364.0528 ms, Q3 = 364.8804 ms, Max = 364.8804 ms
+IQR = 19.6906 ms, LowerFence = 315.6538 ms, UpperFence = 394.4164 ms
+ConfidenceInterval = [154.8576 ms; 561.2243 ms] (CI 99.9%), Margin = 203.1834 ms (56.75% of Mean)
+Skewness = -0.38, Kurtosis = 0.67, MValue = 2
+-------------------- Histogram --------------------
+[338.433 ms ; 357.710 ms) | @
+[357.710 ms ; 371.637 ms) | @@
+---------------------------------------------------
+
+SampleBenchmark.MessagePackTypelessLz4: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+Runtime = .NET Core 3.0.0 (CoreCLR 4.700.19.46205, CoreFX 4.700.19.46214), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 512.9618 ms, StdErr = 2.1665 ms (0.42%); N = 3, StdDev = 3.7525 ms
+Min = 509.9105 ms, Q1 = 509.9105 ms, Median = 511.8232 ms, Q3 = 517.1518 ms, Max = 517.1518 ms
+IQR = 7.2413 ms, LowerFence = 499.0486 ms, UpperFence = 528.0137 ms
+ConfidenceInterval = [444.5019 ms; 581.4218 ms] (CI 99.9%), Margin = 68.4599 ms (13.35% of Mean)
+Skewness = 0.28, Kurtosis = 0.67, MValue = 2
+-------------------- Histogram --------------------
+[507.634 ms ; 519.428 ms) | @@@
+---------------------------------------------------
+
+// * Summary *
+
+BenchmarkDotNet=v0.12.0, OS=ubuntu 19.04
+Intel Core i7-8700 CPU 3.20GHz (Coffee Lake), 1 CPU, 12 logical and 6 physical cores
+.NET Core SDK=3.0.100
+  [Host]   : .NET Core 3.0.0 (CoreCLR 4.700.19.46205, CoreFX 4.700.19.46214), X64 RyuJIT
+  ShortRun : .NET Core 3.0.0 (CoreCLR 4.700.19.46205, CoreFX 4.700.19.46214), X64 RyuJIT
+
+Job=ShortRun  IterationCount=3  LaunchCount=1  
+WarmupCount=3  
+
+|                 Method |       Mean |     Error |   StdDev |     Gen 0 |     Gen 1 |     Gen 2 | Allocated |
+|----------------------- |-----------:|----------:|---------:|----------:|----------:|----------:|----------:|
+|       Utf8JsonWithType | 1,014.1 ms |  70.85 ms |  3.88 ms | 1000.0000 | 1000.0000 |         - | 642.99 MB |
+|     Utf8JsonWithTypeGz | 4,174.4 ms | 639.03 ms | 35.03 ms | 7000.0000 | 7000.0000 | 2000.0000 | 814.09 MB |
+|       Utf8JsonTypeless |   987.3 ms |  11.57 ms |  0.63 ms | 1000.0000 | 1000.0000 |         - |    643 MB |
+|     Utf8JsonTypelessGz | 4,256.3 ms | 598.95 ms | 32.83 ms | 7000.0000 | 7000.0000 | 2000.0000 | 814.08 MB |
+|    MessagePackWithType |   401.3 ms | 296.11 ms | 16.23 ms |         - |         - |         - |  336.9 MB |
+| MessagePackWithTypeLz4 |   541.6 ms |  63.10 ms |  3.46 ms | 2000.0000 | 2000.0000 |         - | 395.77 MB |
+|    MessagePackTypeless |   358.0 ms | 203.18 ms | 11.14 ms |         - |         - |         - | 335.94 MB |
+| MessagePackTypelessLz4 |   513.0 ms |  68.46 ms |  3.75 ms | 2000.0000 | 2000.0000 |         - | 394.22 MB |
+
+// * Legends *
+  Mean      : Arithmetic mean of all measurements
+  Error     : Half of 99.9% confidence interval
+  StdDev    : Standard deviation of all measurements
+  Gen 0     : GC Generation 0 collects per 1000 operations
+  Gen 1     : GC Generation 1 collects per 1000 operations
+  Gen 2     : GC Generation 2 collects per 1000 operations
+  Allocated : Allocated memory per single operation (managed only, inclusive, 1KB = 1024B)
+  1 ms      : 1 Millisecond (0.001 sec)
+
+// * Diagnostic Output - MemoryDiagnoser *
+
+
+// ***** BenchmarkRunner: End *****
+// ** Remained 0 benchmark(s) to run **
+Run time: 00:02:02 (122.81 sec), executed benchmarks: 8
+
+Global total time: 00:02:05 (125.41 sec), executed benchmarks: 8
+// * Artifacts cleanup *

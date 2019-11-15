@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$/../.Rider2019.3/system/extResources" t="IncludeRecursive" />
+    <e p="$PROJECT_DIR$/../.Rider2019.3/system/resharper-host/local/Transient/ReSharperHost/v193/SolutionCaches/_MessagePackVsJson.-1406451409.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p=".gitignore" t="Include" />
+      <e p="BenchmarkDotNet.Artifacts" t="Include">
+        <e p="MessagePackVsJson.SampleBenchmark-20191115-182015.log" t="Include" />
+        <e p="MessagePackVsJson.SampleBenchmark-20191115-182248.log" t="Include" />
+        <e p="MessagePackVsJson.SampleBenchmark-20191115-182340.log" t="Include" />
+        <e p="results" t="Include">
+          <e p="MessagePackVsJson.SampleBenchmark-report-console.md" t="Include" />
+          <e p="MessagePackVsJson.SampleBenchmark-report-github.md" t="Include" />
+        </e>
+      </e>
+      <e p="MessagePackVsJson.csproj" t="IncludeRecursive" />
+      <e p="MessagePackVsJson.sln" t="IncludeFlat" />
+      <e p="Program.cs" t="Include" />
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="global.json" t="Include" />
+      <e p="obj" t="ExcludeRecursive">
+        <e p="Release" t="Include">
+          <e p="netcoreapp3.0" t="Include">
+            <e p="MessagePackVsJson.AssemblyInfo.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
