@@ -1,3 +1,16 @@
+## Filesize Benchmark
+
+```
+json:                     137,248,217 bytes
+json + gzip:              045,170,640 bytes
+msgpack:                  084,959,431 bytes
+msgpack + lz4:            061,381,468 bytes
+msgpack (typeless):       083,949,384 bytes
+msgpack (typeless) + lz4: 060,776,211 bytes
+```
+
+## Performance Benchmark
+
 ```
 BenchmarkDotNet=v0.12.0, OS=ubuntu 19.04
 Intel Core i7-8700 CPU 3.20GHz (Coffee Lake), 1 CPU, 12 logical and 6 physical cores
