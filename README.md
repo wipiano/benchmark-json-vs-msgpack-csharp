@@ -1,3 +1,4 @@
+```
 BenchmarkDotNet=v0.12.0, OS=ubuntu 19.04
 Intel Core i7-8700 CPU 3.20GHz (Coffee Lake), 1 CPU, 12 logical and 6 physical cores
 .NET Core SDK=3.0.100
@@ -6,6 +7,7 @@ Intel Core i7-8700 CPU 3.20GHz (Coffee Lake), 1 CPU, 12 logical and 6 physical c
 
 Job=ShortRun  IterationCount=3  LaunchCount=1  
 WarmupCount=3  
+```
 
 |                 Method |       Mean |     Error |   StdDev | Ratio | RatioSD |     Gen 0 |     Gen 1 |     Gen 2 | Allocated | Completed Work Items | Lock Contentions |
 |----------------------- |-----------:|----------:|---------:|------:|--------:|----------:|----------:|----------:|----------:|---------------------:|-----------------:|
@@ -18,6 +20,7 @@ WarmupCount=3
 |    MessagePackTypeless |   368.1 ms |   2.59 ms |  0.14 ms |  0.37 |    0.01 |         - |         - |         - | 335.94 MB |               2.0000 |                - |
 | MessagePackTypelessLz4 |   515.2 ms |  75.83 ms |  4.16 ms |  0.51 |    0.01 | 2000.0000 | 2000.0000 |         - | 394.22 MB |               2.0000 |                - |
 
+```
 // * Legends *
   Mean                 : Arithmetic mean of all measurements
   Error                : Half of 99.9% confidence interval
@@ -31,4 +34,4 @@ WarmupCount=3
   Completed Work Items : The number of work items that have been processed in ThreadPool (per single operation)
   Lock Contentions     : The number of times there was contention upon trying to take a Monitor's lock (per single operation)
   1 ms                 : 1 Millisecond (0.001 sec)
-
+```
